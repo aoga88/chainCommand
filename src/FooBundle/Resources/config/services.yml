@@ -1,0 +1,5 @@
+services:
+  chain:
+    class: FooBundle\Command\HelloCommand
+    calls:
+      - [getChain, [['bar:hi']]]
